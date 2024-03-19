@@ -20,9 +20,9 @@ class TrainSeeder extends Seeder
                 'azienda' => $faker->company,
                 'stazione_partenza' => $faker->city,
                 'stazione_arrivo' => $faker->city,
-                'orario_partenza' => $faker->time('H:i'),
+                'orario_partenza' => $faker->time('H:i'), //ora e minuti 
                 'orario_arrivo' => $faker->time('H:i'),
-                'codice_treno' => $faker->unique()->ean8,
+                'codice_treno' => $faker->unique()->ean8, // codice a barre
                 'numero_carrozze' => $faker->numberBetween(5, 15),
                 'in_orario' => $faker->boolean(70),
                 'cancellato' => $faker->boolean(10),
